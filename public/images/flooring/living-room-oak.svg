@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#EFECE6"/>
+      <stop offset="100%" stop-color="#E2DDD5"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#DEB887"/>
+      <stop offset="40%" stop-color="#D2A679"/>
+      <stop offset="100%" stop-color="#C59665"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="60%" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wall Background -->
+  <rect width="800" height="320" fill="url(#wallGrad)"/>
+
+  <!-- Window Frame on Left -->
+  <rect x="40" y="30" width="160" height="260" fill="#F8FAFC" rx="4" stroke="#CBD5E1" stroke-width="4"/>
+  <rect x="50" y="40" width="65" height="115" fill="#E2E8F0" opacity="0.6"/>
+  <rect x="125" y="40" width="65" height="115" fill="#E2E8F0" opacity="0.6"/>
+  <rect x="50" y="165" width="65" height="115" fill="#E2E8F0" opacity="0.6"/>
+  <rect x="125" y="165" width="65" height="115" fill="#E2E8F0" opacity="0.6"/>
+  <polygon points="40,290 800,290 800,600 40,600" fill="url(#windowLight)" opacity="0.35"/>
+
+  <!-- Hardwood Floor with Perspective Planks -->
+  <polygon points="0,320 800,320 800,600 0,600" fill="url(#floorGrad)"/>
+
+  <!-- Perspective Floor Plank Lines -->
+  <g stroke="#9E6B38" stroke-width="1.5" opacity="0.45">
+    <line x1="400" y1="320" x2="400" y2="600"/>
+    <line x1="320" y1="320" x2="220" y2="600"/>
+    <line x1="240" y1="320" x2="40" y2="600"/>
+    <line x1="160" y1="320" x2="-140" y2="600"/>
+    <line x1="480" y1="320" x2="580" y2="600"/>
+    <line x1="560" y1="320" x2="760" y2="600"/>
+    <line x1="640" y1="320" x2="940" y2="600"/>
+    <!-- Staggered butt joints -->
+    <line x1="270" y1="410" x2="350" y2="410"/>
+    <line x1="440" y1="430" x2="520" y2="430"/>
+    <line x1="120" y1="480" x2="210" y2="480"/>
+    <line x1="490" y1="520" x2="600" y2="520"/>
+    <line x1="300" y1="550" x2="400" y2="550"/>
+  </g>
+
+  <!-- Modern Cream Sofa on Back Wall -->
+  <g transform="translate(260, 180)">
+    <!-- Backrest -->
+    <rect x="0" y="0" width="380" height="90" rx="16" fill="#EDE8DF"/>
+    <!-- Cushions -->
+    <rect x="15" y="40" width="165" height="70" rx="12" fill="#F4EFE6" stroke="#DDD6C8" stroke-width="2"/>
+    <rect x="195" y="40" width="165" height="70" rx="12" fill="#F4EFE6" stroke="#DDD6C8" stroke-width="2"/>
+    <!-- Armrests -->
+    <rect x="-15" y="30" width="30" height="85" rx="10" fill="#E4DDD0"/>
+    <rect x="360" y="30" width="30" height="85" rx="10" fill="#E4DDD0"/>
+    <!-- Base Shadow -->
+    <ellipse cx="185" cy="140" rx="200" ry="12" fill="#8C5E2D" opacity="0.25"/>
+    <!-- Wooden Tapered Legs -->
+    <polygon points="20,110 25,110 32,135 24,135" fill="#7D4E24"/>
+    <polygon points="350,110 355,110 362,135 354,135" fill="#7D4E24"/>
+  </g>
+
+  <!-- Round Oak Coffee Table in Center Foreground -->
+  <g transform="translate(420, 360)">
+    <!-- Floor Shadow -->
+    <ellipse cx="0" cy="55" rx="110" ry="25" fill="#74441E" opacity="0.3"/>
+    <!-- Tapered Legs -->
+    <line x1="-50" y1="20" x2="-65" y2="55" stroke="#8C532E" stroke-width="6" stroke-linecap="round"/>
+    <line x1="50" y1="20" x2="65" y2="55" stroke="#8C532E" stroke-width="6" stroke-linecap="round"/>
+    <line x1="0" y1="20" x2="0" y2="58" stroke="#7A4421" stroke-width="6" stroke-linecap="round"/>
+    <!-- Table Top -->
+    <ellipse cx="0" cy="18" rx="105" ry="32" fill="#C69255"/>
+    <ellipse cx="0" cy="15" rx="105" ry="32" fill="#DEB887"/>
+    <!-- Ceramic Vase on Table -->
+    <path d="M -8,5 Q -14,-15 -6,-25 Q 0,-30 6,-25 Q 14,-15 8,5 Z" fill="#F8FAFC"/>
+    <!-- Dried Botanical Stems -->
+    <line x1="0" y1="-28" x2="-15" y2="-65" stroke="#A88B68" stroke-width="2"/>
+    <line x1="0" y1="-28" x2="8" y2="-72" stroke="#A88B68" stroke-width="2"/>
+    <circle cx="-15" cy="-65" r="4" fill="#C49A6C"/>
+    <circle cx="8" cy="-72" r="4.5" fill="#B37D43"/>
+  </g>
+
+  <!-- Large Potted Monstera / Fiddle Leaf Fig on Right -->
+  <g transform="translate(710, 260)">
+    <!-- Planter Shadow -->
+    <ellipse cx="0" cy="120" rx="35" ry="10" fill="#6B4226" opacity="0.35"/>
+    <!-- White Ceramic Pot -->
+    <polygon points="-28,40 28,40 22,118 -22,118" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="2"/>
+    <!-- Soil -->
+    <ellipse cx="0" cy="42" rx="26" ry="7" fill="#3D2817"/>
+    <!-- Lush Leaves -->
+    <path d="M 0,35 Q -30,-20 -60,-10 Q -40,30 0,35 Z" fill="#1B4D3E"/>
+    <path d="M 0,35 Q 20,-30 65,-25 Q 45,25 0,35 Z" fill="#266D57"/>
+    <path d="M 0,30 Q -10,-80 -45,-95 Q -15,-40 0,30 Z" fill="#2E8B6D"/>
+    <path d="M 0,25 Q 30,-70 50,-85 Q 20,-30 0,25 Z" fill="#3AA882"/>
+    <path d="M 0,15 Q 0,-110 15,-125 Q 5,-60 0,15 Z" fill="#266D57"/>
+  </g>
+</svg>

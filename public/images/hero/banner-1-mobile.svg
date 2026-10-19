@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 768" width="768" height="768">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E2A24"/>
+      <stop offset="50%" stop-color="#2D3E35"/>
+      <stop offset="100%" stop-color="#16201B"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E2B168"/>
+      <stop offset="100%" stop-color="#C29249"/>
+    </linearGradient>
+    <pattern id="chevron" width="80" height="60" patternUnits="userSpaceOnUse">
+      <path d="M0 30 L40 0 L80 30 L80 60 L40 30 L0 60 Z" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="2"/>
+    </pattern>
+  </defs>
+  <rect width="768" height="768" fill="url(#g1)"/>
+  <rect width="768" height="768" fill="url(#chevron)"/>
+  <circle cx="384" cy="240" r="180" fill="rgba(226,177,104,0.08)"/>
+  <g transform="translate(60, 220)">
+    <rect x="0" y="0" width="180" height="32" rx="16" fill="rgba(226,177,104,0.18)" stroke="#E2B168" stroke-width="1"/>
+    <text x="90" y="21" fill="#E2B168" font-family="'Plus Jakarta Sans', sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" text-anchor="middle">ATELIER COLLECTION</text>
+    <text x="0" y="85" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Grandeur French</text>
+    <text x="0" y="135" fill="#E2B168" font-family="'Plus Jakarta Sans', sans-serif" font-size="44" font-weight="800" letter-spacing="-1">Chevron Parquet</text>
+    <text x="0" y="195" fill="rgba(255,255,255,0.75)" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400">Authentic European Solid Oak Milling</text>
+    <g transform="translate(0, 245)">
+      <rect width="220" height="52" rx="26" fill="url(#gold)"/>
+      <text x="110" y="32" fill="#1A241F" font-family="'Plus Jakarta Sans', sans-serif" font-size="15" font-weight="700" text-anchor="middle">Explore Collection →</text>
+    </g>
+  </g>
+</svg>

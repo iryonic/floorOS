@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#9C8267"/>
+        <g stroke="#705841" stroke-width="2" fill="#9C8267">
+        <polygon points="50,0 200,100 150,150 0,50"/>
+        <polygon points="200,100 350,0 400,50 250,150"/>
+        <polygon points="50,150 200,250 150,300 0,200"/>
+        <polygon points="200,250 350,150 400,200 250,300"/>
+        <polygon points="50,300 200,400 150,450 0,350"/>
+        <polygon points="200,400 350,300 400,350 250,450"/>
+        <polygon points="350,0 500,100 450,150 300,50"/>
+        <polygon points="500,100 650,0 700,50 550,150"/>
+      </g>
+  <!-- Gradient Overlay for Depth -->
+  <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+    <stop offset="65%" stop-color="#000000" stop-opacity="0.0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.65"/>
+  </linearGradient>
+  <rect width="600" height="450" fill="url(#overlay)"/>
+  
+  <!-- Subtle Tag & Brand Watermark -->
+  <g transform="translate(30, 360)">
+    <rect width="180" height="52" rx="6" fill="#121815" opacity="0.85"/>
+    <text x="16" y="24" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="700">Luxury Vinyl</text>
+    <text x="16" y="42" fill="#D4AF37" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="1"></text>
+  </g>
+</svg>

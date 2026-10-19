@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wallGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#EFECE6"/>
+      <stop offset="100%" stop-color="#DFD9D0"/>
+    </linearGradient>
+    <linearGradient id="floorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B88A58"/>
+      <stop offset="30%" stop-color="#A57644"/>
+      <stop offset="70%" stop-color="#936435"/>
+      <stop offset="100%" stop-color="#7A4E24"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0"/>
+    </linearGradient>
+    <pattern id="oakPlanks" width="300" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(-15) skewX(20)">
+      <rect width="298" height="28" fill="#B28250" stroke="#7E532B" stroke-width="1.5"/>
+      <line x1="20" y1="14" x2="280" y2="14" stroke="#9E6F3F" stroke-width="0.75" stroke-dasharray="8 12"/>
+      <rect y="30" width="298" height="28" fill="#A87747" stroke="#7E532B" stroke-width="1.5"/>
+      <line x1="10" y1="44" x2="260" y2="44" stroke="#8E5E32" stroke-width="0.75" stroke-dasharray="14 18"/>
+    </pattern>
+  </defs>
+
+  <!-- Wall Background -->
+  <rect width="1200" height="380" fill="url(#wallGrad)"/>
+
+  <!-- Large Architectural Window -->
+  <rect x="750" y="40" width="380" height="320" fill="#F4F8F9" rx="8"/>
+  <rect x="760" y="50" width="175" height="145" fill="#E2EDF0" opacity="0.8"/>
+  <rect x="945" y="50" width="175" height="145" fill="#E2EDF0" opacity="0.8"/>
+  <rect x="760" y="205" width="175" height="145" fill="#D7E6EA" opacity="0.8"/>
+  <rect x="945" y="205" width="175" height="145" fill="#D7E6EA" opacity="0.8"/>
+
+  <!-- Flooring Base -->
+  <polygon points="0,380 1200,380 1200,800 0,800" fill="url(#floorGrad)"/>
+  <polygon points="0,380 1200,380 1200,800 0,800" fill="url(#oakPlanks)" opacity="0.6"/>
+
+  <!-- Perspective Floor Planks Lines -->
+  <g stroke="#5E3814" stroke-width="1.2" opacity="0.45">
+    <line x1="150" y1="380" x2="-200" y2="800"/>
+    <line x1="300" y1="380" x2="50" y2="800"/>
+    <line x1="450" y1="380" x2="320" y2="800"/>
+    <line x1="600" y1="380" x2="600" y2="800"/>
+    <line x1="750" y1="380" x2="880" y2="800"/>
+    <line x1="900" y1="380" x2="1150" y2="800"/>
+    <line x1="1050" y1="380" x2="1400" y2="800"/>
+  </g>
+
+  <!-- Sunlight Cast on Floor -->
+  <polygon points="760,380 1125,380 950,780 400,780" fill="url(#windowLight)"/>
+
+  <!-- Modern Furniture Silhouette (Minimal Chair & Plant) -->
+  <ellipse cx="220" cy="560" rx="90" ry="14" fill="#3D2918" opacity="0.25"/>
+  <!-- Minimalist Chair -->
+  <rect x="180" y="440" width="80" height="70" rx="8" fill="#F8F9FA" stroke="#2B322E" stroke-width="3"/>
+  <line x1="185" y1="510" x2="175" y2="560" stroke="#121815" stroke-width="4"/>
+  <line x1="255" y1="510" x2="265" y2="560" stroke="#121815" stroke-width="4"/>
+  <line x1="195" y1="440" x2="195" y2="390" stroke="#121815" stroke-width="3"/>
+  <line x1="245" y1="440" x2="245" y2="390" stroke="#121815" stroke-width="3"/>
+  <rect x="190" y="380" width="60" height="20" rx="4" fill="#2B322E"/>
+
+  <!-- Ceramic Plant Pot -->
+  <ellipse cx="620" cy="460" rx="35" ry="8" fill="#3D2918" opacity="0.3"/>
+  <polygon points="600,410 640,410 635,460 605,460" fill="#E8E2D8"/>
+  <circle cx="620" cy="380" r="28" fill="#2D5A46"/>
+  <circle cx="605" cy="360" r="22" fill="#366B53"/>
+  <circle cx="635" cy="365" r="24" fill="#244B3A"/>
+
+  <!-- Baseboard Trim -->
+  <rect x="0" y="372" width="1200" height="8" fill="#FFFFFF"/>
+  <line x1="0" y1="380" x2="1200" y2="380" stroke="#B8AFA2" stroke-width="1.5"/>
+
+  <!-- Badge in Corner -->
+  <g transform="translate(60, 60)">
+    <rect width="240" height="48" rx="8" fill="#176B52" opacity="0.95"/>
+    <text x="20" y="29" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">ROYAL OAK HERITAGE</text>
+  </g>
+</svg>

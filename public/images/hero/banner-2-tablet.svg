@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 640" width="1024" height="640">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E242B"/>
+      <stop offset="50%" stop-color="#163740"/>
+      <stop offset="100%" stop-color="#0A181D"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="640" fill="url(#g2)"/>
+  <path d="M0 480 Q 250 350 500 480 T 1024 440 L 1024 640 L 0 640 Z" fill="rgba(56,189,248,0.06)"/>
+  <g transform="translate(70, 180)">
+    <rect x="0" y="0" width="190" height="32" rx="16" fill="rgba(56,189,248,0.18)" stroke="#38BDF8" stroke-width="1"/>
+    <text x="95" y="21" fill="#38BDF8" font-family="'Plus Jakarta Sans', sans-serif" font-size="13" font-weight="700" letter-spacing="1.5" text-anchor="middle">100% WATERPROOF SPC</text>
+    <text x="0" y="90" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="46" font-weight="800" letter-spacing="-1">AquaShield Pro Stone-Core</text>
+    <text x="0" y="140" fill="rgba(255,255,255,0.75)" font-family="'Plus Jakarta Sans', sans-serif" font-size="18" font-weight="400">Zero Swell, Acoustic Sound Dampening & High Commercial Wear Layer</text>
+    <g transform="translate(0, 185)">
+      <rect width="200" height="48" rx="24" fill="url(#cyan)"/>
+      <text x="100" y="30" fill="#FFFFFF" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="700" text-anchor="middle">View SPC Flooring →</text>
+    </g>
+  </g>
+</svg>

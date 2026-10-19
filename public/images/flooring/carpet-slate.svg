@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <rect width="600" height="450" fill="#4B535C"/>
+        <rect width="600" height="450" fill="#4B535C"/>
+      <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+        <rect width="10" height="10" fill="#2F353C" opacity="0.5"/>
+        <rect x="10" y="10" width="10" height="10" fill="#2F353C" opacity="0.5"/>
+      </pattern>
+      <rect width="600" height="450" fill="url(#grid)"/>
+  <!-- Gradient Overlay for Depth -->
+  <linearGradient id="overlay" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.12"/>
+    <stop offset="65%" stop-color="#000000" stop-opacity="0.0"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.65"/>
+  </linearGradient>
+  <rect width="600" height="450" fill="url(#overlay)"/>
+  
+  <!-- Subtle Tag & Brand Watermark -->
+  <g transform="translate(30, 360)">
+    <rect width="180" height="52" rx="6" fill="#121815" opacity="0.85"/>
+    <text x="16" y="24" fill="#FFFFFF" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="14" font-weight="700">Acoustic Slate</text>
+    <text x="16" y="42" fill="#D4AF37" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="12" font-weight="600" letter-spacing="1">CPT-01</text>
+  </g>
+</svg>

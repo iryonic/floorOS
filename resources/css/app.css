@@ -1,0 +1,266 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../views/**/*.blade.php';
+
+:root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --color-primary: #2EAA1F;
+    --color-primary-dark: #1D7A13;
+    --color-primary-light: #EDFBE8;
+    --color-accent: #ffee07;
+    --color-accent-light: #FEF9C3;
+    --color-accent-dark: #ffee04;
+    --color-bg: #FFFFFF;
+    --color-surface: #FFFFFF;
+    --color-border: #E5E7EB;
+    --color-text: #0F172A;
+    --color-text-muted: #64748B;
+    --radius-base: 0.75rem;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Hidden Scrollbar Utility */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Consistent Table Behavior: white-space nowrap by default */
+table, table th, table td {
+    white-space: nowrap;
+}
+
+/* Custom Design System Utilities using Dynamic Backend Variables */
+.bg-brand {
+    background-color: var(--color-primary);
+}
+
+.bg-brand-dark {
+    background-color: var(--color-primary-dark);
+}
+
+.bg-brand-light {
+    background-color: var(--color-primary-light);
+}
+
+.text-brand {
+    color: var(--color-primary);
+}
+
+.text-brand-dark {
+    color: var(--color-primary-dark);
+}
+
+.text-brand-light {
+    color: var(--color-primary-light);
+}
+
+.border-brand {
+    border-color: var(--color-primary);
+}
+
+.border-brand-dark {
+    border-color: var(--color-primary-dark);
+}
+
+.border-brand-light {
+    border-color: var(--color-primary-light);
+}
+
+/* Accent Utilities (Bright Yellow / Gold / Sun) */
+.bg-accent {
+    background-color: var(--color-accent);
+}
+
+.bg-accent-light {
+    background-color: var(--color-accent-light, #FEF9C3);
+}
+
+.text-accent {
+    color: var(--color-accent);
+}
+
+.text-accent-dark {
+    color: var(--color-accent-dark, #CA8A04);
+}
+
+.border-accent {
+    border-color: var(--color-accent);
+}
+
+/* Hover States */
+.hover\:bg-brand:hover {
+    background-color: var(--color-primary);
+}
+
+.hover\:bg-brand-dark:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.hover\:bg-brand-light:hover {
+    background-color: var(--color-primary-light);
+}
+
+.hover\:text-brand:hover {
+    color: var(--color-primary);
+}
+
+.hover\:text-brand-dark:hover {
+    color: var(--color-primary-dark);
+}
+
+.hover\:border-brand:hover {
+    border-color: var(--color-primary);
+}
+
+.hover\:bg-accent:hover {
+    background-color: var(--color-accent);
+}
+
+/* Component Classes */
+.border-custom {
+    border-color: var(--color-border);
+}
+
+.bg-surface {
+    background-color: var(--color-surface);
+}
+
+.rounded-custom {
+    border-radius: var(--radius-base);
+}
+
+.card-surface {
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+}
+
+.badge-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    border: 1px solid var(--color-primary-light);
+}
+
+.badge-accent {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.25rem 0.625rem;
+    border-radius: 9999px;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: var(--color-accent-light, #FEF9C3);
+    color: var(--color-accent-dark, #CA8A04);
+    border: 1px solid var(--color-accent);
+}
+
+.btn-brand {
+    background-color: var(--color-primary);
+    color: #ffffff;
+    border-radius: var(--radius-base);
+    padding: 0.625rem 1.25rem;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-brand:hover {
+    background-color: var(--color-primary-dark);
+    box-shadow: 0 4px 10px -1px rgba(46, 170, 31, 0.25);
+}
+
+.btn-accent {
+    background-color: var(--color-accent);
+    color: #0F172A;
+    border-radius: var(--radius-base);
+    padding: 0.625rem 1.25rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-accent:hover {
+    filter: brightness(0.95);
+    box-shadow: 0 4px 10px -1px rgba(234, 179, 8, 0.3);
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: var(--color-text);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.btn-secondary:hover {
+    background-color: #ffffff;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.input-custom {
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-base);
+    background-color: #ffffff;
+    padding: 0.5rem 0.875rem;
+    font-size: 0.875rem;
+    color: var(--color-text);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input-custom:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px var(--color-primary-light);
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none !important;
+    }
+    .print-only {
+        display: block !important;
+    }
+    body {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+    }
+}
